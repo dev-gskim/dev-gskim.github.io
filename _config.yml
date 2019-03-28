@@ -1,1 +1,6 @@
 theme: jekyll-theme-architect
+title: white stone
+email: dev.gskim@gmail.com
+description: "test"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
