@@ -11,5 +11,10 @@ python3 -m venv /path/to/new/virtual/environment
 [agent@host ~]$ source ./venv3/bin/activate
 (venv3) [agent@host ~]$
 ~~~
+> virtualenv를 이용해서 python3의 환경을 만들수 있다.
+~~~sh
+virtualenv -p python3 venv
+~~~
+
 
 
