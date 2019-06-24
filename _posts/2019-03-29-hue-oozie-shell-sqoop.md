@@ -1,7 +1,7 @@
 ---
 title: "CDH oozie 에서 Sqoop 실행"
 date: 2019-03-29 08:26:28 -0400
-categories: jekyll update
+categories: sqoop
 ---
 
 ## CDH oozie 에서 sqoop 실행
