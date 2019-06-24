@@ -1,3 +1,9 @@
+---
+title: "CDH oozie 에서 Sqoop 실행"
+date: 2019-03-29 08:26:28 -0400
+categories: jekyll update
+---
+
 ## CDH oozie 에서 sqoop 실행
 > hue 에서 workflow 실행시 shell 로 sqoop 실행시 다음과 같은 오류가 발생했다.
 ~~~sh
