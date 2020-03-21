@@ -4,6 +4,7 @@
 
 ## python
 
+* [Flask Simple](python/flask-simple.md)
 * [simple cgi server](python/simple-cgi-server.md)
 
 ## data engineer <a id="data-engineeor"></a>
