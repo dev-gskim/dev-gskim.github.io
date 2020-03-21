@@ -14,15 +14,15 @@ web browser 에서 http://localhost:8080 을 입력한다.
 
 ## Directory listing for /
 
-* [.android/]
-* [.AnySign4PC/]
-* [.atom/]
-* [.bash\_history]
-* [.bash\_profile]
-* [.bash\_sessions]
-* [.config/]
-* [.cups/]
-* [.dbeaver-drivers/]
-* [.dbeaver4/]
-* [.delfino.conf]
+* .android/
+* .AnySign4PC/
+* .atom/
+* .bash\_history
+* .bash\_profile
+* .bash\_sessions
+* .config/
+* .cups/
+* .dbeaver-drivers/
+* .dbeaver4/
+* .delfino.conf
 
