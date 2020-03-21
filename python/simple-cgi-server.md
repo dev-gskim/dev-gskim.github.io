@@ -10,9 +10,9 @@ simple http server
 $ python -m http.server --cgi 8080
 ```
 
-web browser 에서 http://localhost:8080 을 입력한다.
+web browser 에서 [http://localhost:8080](http://localhost:8080) 을 입력한다.
 
-## Directory listing for /
+### Directory listing for /
 
 * .android/
 * .AnySign4PC/
@@ -25,4 +25,20 @@ web browser 에서 http://localhost:8080 을 입력한다.
 * .dbeaver-drivers/
 * .dbeaver4/
 * .delfino.conf
+
+## python script 
+
+```text
+import http.server
+import socketserver
+
+Handler = http.server.CGIHTTPRequestHandler
+
+http = socketserver.TCPServer(("", 8080), Handler)
+http.server_name = "localhost"
+http.server_port = 8080
+http.serve_forever()
+```
+
+
 
