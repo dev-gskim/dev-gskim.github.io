@@ -1,6 +1,14 @@
 # Flask Simple
 
-## flask start
+## 
+
+### install flask
+
+```text
+$ python -m pip install Flask==1.1.1
+```
+
+### python write app.py
 
 ```text
 from flask import Flask
@@ -12,5 +20,11 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+```
+
+### start flask
+
+```text
+$ python app.py
 ```
 
