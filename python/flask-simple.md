@@ -36,3 +36,14 @@ http://localhost:5000
 Hello World!
 ```
 
+### 참고
+
+* flask version
+
+```text
+import flask
+flask.__version__
+```
+
+>
+
