@@ -28,3 +28,11 @@ if __name__ == "__main__":
 $ python app.py
 ```
 
+### browser 
+
+```text
+http://localhost:5000
+
+Hello World!
+```
+
