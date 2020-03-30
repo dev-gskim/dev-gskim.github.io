@@ -11,4 +11,5 @@
 
 * [influxdb, telegraf 설치](data-engineeor/influxdb-telegraf.md)
 * [postgesql install](postgesql-install.md)
+* [postgres PSQL](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
 
