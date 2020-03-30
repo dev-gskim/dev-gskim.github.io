@@ -10,4 +10,5 @@
 ## data engineer <a id="data-engineeor"></a>
 
 * [influxdb, telegraf 설치](data-engineeor/influxdb-telegraf.md)
+* [postgesql install](postgesql-install.md)
 
