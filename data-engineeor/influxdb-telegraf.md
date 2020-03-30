@@ -1,5 +1,9 @@
 # influxdb, telegraf 설치
 
+influxData 가 기본 site 이다.
+
+최신 버전의 Download 는 : [https://portal.influxdata.com/downloads/](https://portal.influxdata.com/downloads/) 에서 받으면 된다.
+
 ## influxdb
 
 아래 설명은 binary 설치파일\(2019.12\) 기준으로 작성하였습니다.
