@@ -20,3 +20,7 @@
 
 * [GoLang](https://golang.org/doc/)
 
+### Tensorflow
+
+* [tensorflow](https://github.com/galeone/tfgo)
+
