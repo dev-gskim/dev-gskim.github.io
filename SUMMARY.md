@@ -1,11 +1,7 @@
 # Table of contents
 
 * [remember technical](README.md)
-
-## python
-
-* [Flask Simple](python/flask-simple.md)
-* [simple cgi server](python/simple-cgi-server.md)
+* [DOCKER USER 추가](docker-user.md)
 
 ## data engineer <a id="data-engineeor"></a>
 
