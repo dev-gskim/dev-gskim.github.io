@@ -1,4 +1,4 @@
-# DOCKER USER 추가
+# docker user 추가
 
 * linux mint 에서 docker 를 사용하려면 다음과 같이 입력한다.
 
