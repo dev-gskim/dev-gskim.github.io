@@ -21,4 +21,5 @@
 ---
 
 * [CURL 사용법](curl.md)
+* [redis install](redis-install.md)
 
