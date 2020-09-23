@@ -1,4 +1,4 @@
-# redis install
+# redis
 
 ### docker install
 
