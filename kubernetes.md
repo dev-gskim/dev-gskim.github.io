@@ -8,11 +8,38 @@
 
 > Pod 는 쿠버네티스에서 가장 기본적인 배포 단위로, 컨테이너를 포함하는 단위이다. 쿠버네티스의 특징중의 하나는 컨테이너를 개별적으로 하나씩 배포하는 것이 아니라 Pod 라는 단위로 배포하는데, Pod는 하나 이상의 컨테이너를 포함한다.
 
-### 
+### install
+
+* kubeadm, kubelet, kubectl 을 설치한다.
+* [site](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) 참조
+
+```text
+$ cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+exclude=kubelet kubeadm kubectl
+EOF
+
+# Set SELinux in permissive mode (effectively disabling it)
+$ sudo setenforce 0
+$ sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+
+$ sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+
+$ sudo systemctl enable --now kubelet
+Created symlink from /etc/systemd/system/multi-user.target.wants/kubelet.service to /usr/lib/systemd/system/kubelet.service.
+```
+
+
 
 ### kubectl install
 
-* [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/) 참
+* [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/) 참조 
 * 리눅스에서 curl을 사용하여 kubectl 바이너리 설치
 
 ```text
