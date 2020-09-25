@@ -12,6 +12,15 @@
 
 * kubeadm, kubelet, kubectl 을 설치한다.
 * [site](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) 참조
+* Letting iptables see bridged traffic[ ](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#letting-iptables-see-bridged-traffic)
+
+  ```text
+  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+  net.bridge.bridge-nf-call-ip6tables = 1
+  net.bridge.bridge-nf-call-iptables = 1
+  EOF
+  sudo sysctl --system
+  ```
 
 ```text
 $ cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
