@@ -15,11 +15,12 @@
 * Letting iptables see bridged traffic[ ](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#letting-iptables-see-bridged-traffic)
 
   ```text
-  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+  $ cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
   net.bridge.bridge-nf-call-ip6tables = 1
   net.bridge.bridge-nf-call-iptables = 1
   EOF
-  sudo sysctl --system
+
+  $sudo sysctl --system
   ```
 
 ```text
@@ -66,48 +67,6 @@ $ sudo mv ./kubectl /usr/local/bin/kubectl
 $ kubectl version --client
 Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.2", GitCommit:"f5743093fd1c663cb0cbc89748f730662345d44d", GitTreeState:"clean", BuildDate:"2020-09-16T13:41:02Z", GoVersion:"go1.15", Compiler:"gc", Platform:"linux/amd64"}
 ```
-
-### kubeadm install
-
-* [site](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) 참조
-
-```text
-### k8s.conf 
-$ cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF
-
-### 
-$ sudo sysctl --system
-* Applying /usr/lib/sysctl.d/00-system.conf ...
-net.bridge.bridge-nf-call-ip6tables = 0
-net.bridge.bridge-nf-call-iptables = 0
-net.bridge.bridge-nf-call-arptables = 0
-* Applying /usr/lib/sysctl.d/10-default-yama-scope.conf ...
-kernel.yama.ptrace_scope = 0
-* Applying /usr/lib/sysctl.d/50-default.conf ...
-kernel.sysrq = 16
-kernel.core_uses_pid = 1
-net.ipv4.conf.default.rp_filter = 1
-net.ipv4.conf.all.rp_filter = 1
-net.ipv4.conf.default.accept_source_route = 0
-net.ipv4.conf.all.accept_source_route = 0
-net.ipv4.conf.default.promote_secondaries = 1
-net.ipv4.conf.all.promote_secondaries = 1
-fs.protected_hardlinks = 1
-fs.protected_symlinks = 1
-* Applying /usr/lib/sysctl.d/60-libvirtd.conf ...
-fs.aio-max-nr = 1048576
-* Applying /etc/sysctl.d/99-sysctl.conf ...
-* Applying /etc/sysctl.d/k8s.conf ...
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-* Applying /etc/sysctl.conf ...
-
-```
-
-
 
 
 
