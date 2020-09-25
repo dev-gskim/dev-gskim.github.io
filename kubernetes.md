@@ -47,7 +47,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/kubelet.service
 
 
 
-### kubectl install
+### kubectl install - 단독 
 
 * [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/) 참조 
 * 리눅스에서 curl을 사용하여 kubectl 바이너리 설치
