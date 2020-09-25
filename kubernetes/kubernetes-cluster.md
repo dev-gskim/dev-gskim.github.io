@@ -2,7 +2,7 @@
 
 ### 작업순서 
 
-* site ref 
+* [site ref](https://medium.com/finda-tech/overview-8d169b2a54ff) 
 
 ### POD network 구성 
 
