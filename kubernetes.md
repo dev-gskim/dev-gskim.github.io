@@ -1,5 +1,13 @@
 # kubernetes
 
+#### kubernetes 클러스터 구성을 위해 모든 노드에 아래의 패키지를 설치 해야 한다. 
+
+* kubeadm : kubernetes 클러스터를 구축하기 위해 사용하는 툴이다. 
+* kubelet : 클러스터의 모든 머신에서 실행되며 Pod 및 컨테이너 시작 등의 작업을 수행하는 구성 요소이다. 
+* kubectl : 클러스터와 통신하는 커맨드라인 인터페이스 유틸이다.
+
+### 
+
 ### kubectl install
 
 * [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/) 참
