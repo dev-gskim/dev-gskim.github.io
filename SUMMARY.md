@@ -7,5 +7,6 @@
   * [docker user 추가](docker/docker-user.md)
 * [influxdb, telegraf 설치](influxdb-telegraf.md)
 * [golang refer](golang-refer.md)
+* [kubernetes](kubernetes.md)
 * [redis](redis-install.md)
 
