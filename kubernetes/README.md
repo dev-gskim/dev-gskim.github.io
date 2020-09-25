@@ -1,5 +1,10 @@
 # kubernetes
 
+#### kubernetes 개념이해 
+
+* [site1](https://bcho.tistory.com/1256)
+* [site2](https://bcho.tistory.com/1257?category=731548)
+
 #### kubernetes 클러스터 구성을 위해 모든 노드에 아래의 패키지를 설치 해야 한다. 
 
 * kubeadm : kubernetes 클러스터를 구축하기 위해 사용하는 툴이다. 
