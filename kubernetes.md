@@ -2,7 +2,8 @@
 
 ### install
 
-* [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/)
+* [site](https://kubernetes.io/ko/docs/tasks/tools/install-kubectl/) 참
+* 리눅스에서 curl을 사용하여 kubectl 바이너리 설치
 
 ```text
 #### download
