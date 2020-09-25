@@ -61,3 +61,11 @@ net.bridge.bridge-nf-call-iptables = 1
 
 ```
 
+
+
+
+
+#### sysctl
+
+> sysctl 은 버전 번호나 보안 설정 같은 시스템 [커널](https://ko.wikipedia.org/wiki/%EC%BB%A4%EB%84%90_%28%EC%BB%B4%ED%93%A8%ED%8C%85%29)의 속성들을 읽고 수정하는 몇몇 [유닉스 계열](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%89%EC%8A%A4_%EA%B3%84%EC%97%B4) 운영 체제의 기능이다.
+
