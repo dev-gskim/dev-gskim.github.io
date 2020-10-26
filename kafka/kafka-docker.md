@@ -69,3 +69,9 @@ CPython version: 3.7.7
 OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ```
 
+### composer 실 
+
+```text
+# docker-compose -f kafka-compose.yml up -d
+```
+
