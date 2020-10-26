@@ -146,10 +146,13 @@ fd0cec8fb9ad        wurstmeister/kafka:2.12-2.5.0   "start-kafka.sh"         6 m
 ### client test 
 
 * kafka client download
+* kafka image가 kafka:2.12-2.5.0 기반이므로 관련된 kafka client 를 받는다. 
 
 ```text
-$ wget https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.2.0/kafka_2.12-0.10.2.0.tgz
-$ tar xzvf kafka_2.12-0.10.2.0.tgz
-$ cd kafka_2.12-0.10.2.0
+$ wget https://downloads.apache.org/kafka/2.5.0/kafka_2.12-2.5.0.tgz
+$ tar xvfz kafka_2.12-2.5.0.tgz
+$ cd kafka_2.12-2.5.0
 ```
+
+
 
