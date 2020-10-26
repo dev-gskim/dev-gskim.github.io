@@ -10,4 +10,5 @@
 * [kubernetes](kubernetes/README.md)
   * [kubernetes cluster 구성](kubernetes/kubernetes-cluster.md)
 * [redis](redis-install.md)
+* [rabbitmq](rabbitmq.md)
 
