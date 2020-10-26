@@ -1,4 +1,4 @@
-# rabbitmq on docker
+# rabbitmq docker
 
 ### docker rabbitmq install
 
