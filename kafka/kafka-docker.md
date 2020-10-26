@@ -72,7 +72,14 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ### composer 실행 
 
 ```text
+-- daemon start
 # docker-compose -f kafka-compose.yml up -d
+
+-- stop
+# docker-compose stop
+
+-- start
+# docker-compose start
 ```
 
 * bash 
@@ -83,5 +90,15 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 
 -- bash 접속 
 # docker container exec -it kafka bash
+```
+
+### client test 
+
+* kafka client download
+
+```text
+$ wget https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.2.0/kafka_2.12-0.10.2.0.tgz
+$ tar xzvf kafka_2.12-0.10.2.0.tgz
+$ cd kafka_2.12-0.10.2.0
 ```
 
