@@ -1,7 +1,6 @@
 # Table of contents
 
 * [remember technical](README.md)
-* [golang refer](golang-refer.md)
 * [docker](docker/README.md)
   * [docker install](docker/docker-install.md)
   * [docker compose install](docker/docker-compose-install.md)
