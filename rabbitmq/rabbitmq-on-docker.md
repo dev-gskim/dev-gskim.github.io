@@ -23,9 +23,3 @@ docker.io/library/rabbitmq:latest
 
 ```
 
-container 
-
-```text
-
-```
-
