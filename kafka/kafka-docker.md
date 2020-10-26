@@ -74,12 +74,63 @@ OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
 ```text
 -- daemon start
 # docker-compose -f kafka-compose.yml up -d
+]# docker-compose -f kafka-compose.yml up -d
+Creating network "root_default" with the default driver
+Pulling zookeeper (wurstmeister/zookeeper:)...
+latest: Pulling from wurstmeister/zookeeper
+a3ed95caeb02: Pull complete
+ef38b711a50f: Pull complete
+e057c74597c7: Pull complete
+666c214f6385: Pull complete
+c3d6a96f1ffc: Pull complete
+3fe26a83e0ca: Pull complete
+3d3a7dd3a3b1: Pull complete
+f8cc938abe5f: Pull complete
+9978b75f7a58: Pull complete
+4d4dbcc8f8cc: Pull complete
+8b130a9baa49: Pull complete
+6b9611650a73: Pull complete
+5df5aac51927: Pull complete
+76eea4448d9b: Pull complete
+8b66990876c6: Pull complete
+f0dd38204b6f: Pull complete
+Digest: sha256:7a7fd44a72104bfbd24a77844bad5fabc86485b036f988ea927d1780782a6680
+Status: Downloaded newer image for wurstmeister/zookeeper:latest
+Pulling kafka (wurstmeister/kafka:2.12-2.5.0)...
+2.12-2.5.0: Pulling from wurstmeister/kafka
+e7c96db7181b: Pull complete
+f910a506b6cb: Pull complete
+b6abafe80f63: Pull complete
+2e9c2caa5758: Pull complete
+1b29071c565f: Pull complete
+c81626d038e3: Pull complete
+Digest: sha256:71aa89afe97d3f699752b6d80ddc2024a057ae56407f6ab53a16e9e4bedec04c
+Status: Downloaded newer image for wurstmeister/kafka:2.12-2.5.0
+Creating zookeeper ... done
+Creating kafka     ... done
+]#
+]#
+]# docker container ls
+CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS              PORTS                                                NAME             S
+5831223489f4        wurstmeister/zookeeper          "/bin/sh -c '/usr/sb…"   4 minutes ago       Up 3 minutes        22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp   zook             eeper
+fd0cec8fb9ad        wurstmeister/kafka:2.12-2.5.0   "start-kafka.sh"         4 minutes ago       Up 3 minutes        0.0.0.0:9092->9092/tcp                               kafk             a
+]#
 
 -- stop
-# docker-compose stop
+]# docker-compose -f kafka-compose.yml stop
+Stopping zookeeper ... done
+Stopping kafka     ... done
+]#
 
 -- start
-# docker-compose start
+# docker-compose -f kafka-compose.yml start
+Starting zookeeper ... done
+Starting kafka     ... done
+[root@epsvr4 ~]# docker container ls
+CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS              PORTS                                                NAMES
+5831223489f4        wurstmeister/zookeeper          "/bin/sh -c '/usr/sb…"   6 minutes ago       Up 2 seconds        22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp   zookeeper
+fd0cec8fb9ad        wurstmeister/kafka:2.12-2.5.0   "start-kafka.sh"         6 minutes ago       Up 2 seconds        0.0.0.0:9092->9092/tcp                               kafka
+]#
 ```
 
 * bash 
