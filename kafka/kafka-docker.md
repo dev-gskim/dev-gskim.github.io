@@ -152,6 +152,16 @@ fd0cec8fb9ad        wurstmeister/kafka:2.12-2.5.0   "start-kafka.sh"         6 m
 $ wget https://downloads.apache.org/kafka/2.5.0/kafka_2.12-2.5.0.tgz
 $ tar xvfz kafka_2.12-2.5.0.tgz
 $ cd kafka_2.12-2.5.0
+
+-- topic
+$ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test1
+Created topic test1.
+
+-- producer
+$ bin/kafka-console-producer.sh --topic test_topic --broker-list localhost:9092
+
+-- consumer
+$ bin/kafka-console-consumer.sh --topic test_topic --bootstrap-server localhost:9092 --from-beginning
 ```
 
 
