@@ -42,5 +42,3 @@ defaults:
       layout: single
       author_profile: true
 
-plugins:
-  - jekyll-paginate
