@@ -1,13 +1,28 @@
 # docker user 추가
 
-* linux mint 에서 docker 를 사용하려면 다음과 같이 입력한다.
+### 가장 간단한 방법
 
-  ```text
+* group 에 사용자 추가하기
+
+```text
+## -a : add user into group
+## -d : delete user from group
+## -r : delete passwd on group
+# gpasswd -a [user] [group]
+```
+
+
+
+
+
+### LINUX MINT
+
+* linux mint 에서 docker 를 사용하려면 다음과 같이 입력한다.
+* ```text
   $ sudo apt install docker.io
   # 사용자 추가
   $ sudo usermod -aG docker $USER
   ```
-
 * 그런데 위의 명령으로는 $USER 에 그룹이 추가되지 않는다.
 
   ```text
