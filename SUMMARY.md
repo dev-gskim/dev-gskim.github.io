@@ -2,6 +2,7 @@
 
 * [remember technical](README.md)
 * [docker](docker/README.md)
+  * [docker container 자동실행](docker/docker-container.md)
   * [docker install](docker/docker-install.md)
   * [docker compose install](docker/docker-compose-install.md)
   * [docker user 추가](docker/docker-user.md)
