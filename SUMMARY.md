@@ -2,6 +2,7 @@
 
 * [remember technical](README.md)
 * [docker](docker/README.md)
+  * [docker root](docker/docker-root.md)
   * [docker container 자동실행](docker/docker-container.md)
   * [docker install](docker/docker-install.md)
   * [docker compose install](docker/docker-compose-install.md)
