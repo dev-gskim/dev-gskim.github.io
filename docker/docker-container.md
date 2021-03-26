@@ -4,6 +4,12 @@ description: docker container 자동실행
 
 # docker container 자동실행
 
+### docker 자동실행
+
+```text
+# systemctl enable docker
+```
+
 ### docker container 자동실행 
 
 * 참고 : [https://docs.docker.com/config/containers/start-containers-automatically/](https://docs.docker.com/config/containers/start-containers-automatically/)
