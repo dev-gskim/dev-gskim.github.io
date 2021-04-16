@@ -16,5 +16,6 @@
 * [kafka](kafka/README.md)
   * [kafka docker](kafka/kafka-docker.md)
 * [git](git/README.md)
+  * [git ignore 만들기](git/git-ignore.md)
   * [pull, push 시 계정 물어보지 않도록](git/pull-push.md)
 
