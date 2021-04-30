@@ -18,4 +18,5 @@
 * [git](git/README.md)
   * [git ignore 만들기](git/git-ignore.md)
   * [pull, push 시 계정 물어보지 않도록](git/pull-push.md)
+  * [git 이전 내용으로 되돌리기.](git/git-..md)
 
