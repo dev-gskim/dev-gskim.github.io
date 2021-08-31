@@ -20,4 +20,5 @@
   * [pull, push 시 계정 물어보지 않도록](git/pull-push.md)
   * [git 이전 내용으로 되돌리기.](git/git-..md)
   * [gitLab 에서 push가 안될때](git/gitlab-push.md)
+  * [github 에서 토큰 사용하기](git/github.md)
 
